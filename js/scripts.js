@@ -1,10 +1,10 @@
 // User Interface Logic
 
-let form = document.getElementById("form#ask");
+let form = document.getElementById("ask");
 let submitQs = document.getElementById("btn");
 let outputShow = document.getElementById("output");
 
-form.addEventListener(submitQs, function () {
+form.addEventListener("click", function () {
 
 
 
