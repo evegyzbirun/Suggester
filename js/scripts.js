@@ -21,9 +21,15 @@ form.addEventListener("submit", function () {
 
   if (pick1 == "answer1" && (pick2 === "answer1" || pick2 === "answer2" || pick2 === "answer3") && (pick3 === "answer1" || pick3 === "answer2" || pick3 === "answer3") && (pick4 === "answer1" || pick4 === "answer2" || pick4 === "answer3") && (pick5 === "answer1" || pick5 === "answer2")) {
 
+    outputShow.style.display = getElementById("Ruby");
+
   } else if (pick1 == "answer2" && (pick2 === "answer1" || pick2 === "answer2" || pick2 === "answer3") && (pick3 === "answer1" || pick3 === "answer2" || pick3 === "answer3") && (pick4 === "answer1" || pick4 === "answer2" || pick4 === "answer3") && (pick5 === "answer1" || pick5 === "answer2")) {
 
+    outputShow.style.display = getElementById("Python");
+
   } else if (pick1 == "answer3" && (pick2 === "answer1" || pick2 === "answer2" || pick2 === "answer3") && (pick3 === "answer1" || pick3 === "answer2" || pick3 === "answer3") && (pick4 === "answer1" || pick4 === "answer2" || pick4 === "answer3") && (pick5 === "answer1" || pick5 === "answer2")) {
+
+    outputShow.style.display = getElementById("Swift");
 
   }
 
