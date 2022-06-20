@@ -4,7 +4,7 @@ let form = document.querySelector("form#ask");
 let submitQs = document.getElementById("btn");
 let outputShow = document.getElementById("output");
 
-form.addEventListener("submit", function () {
+form.addEventListener("submit", function (event) {
 
 
 
@@ -32,5 +32,6 @@ form.addEventListener("submit", function () {
     outputShow.style.display = getElementById("Swift");
 
   }
+
 
 });
