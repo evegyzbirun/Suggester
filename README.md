@@ -5,7 +5,7 @@
 #### The application let students to take a test about what programing language they should study. 
 
 
-#### the procject link to github:
+#### the procject link to github: https://github.com/evegyzbirun/Suggester
 
 ## Technologies Used:
 * VS code
