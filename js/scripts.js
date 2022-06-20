@@ -1,13 +1,14 @@
 // User Interface Logic
 
-let form = document.getElementById("ask");
-let submitQs = document.getElementById("btn");
-let outputShow = document.getElementById("output");
-
-form.addEventListener("click", function () {
+//let form = document.getElementById("ask");
+//let submitQs = document.getElementById("btn");
 
 
+function formSelect(event) {
 
+
+  event.preventDefault();
+  let pick = document.getElementById("ask").value;
   let input1 = document.getElementById("q1");
   let pick1 = input1.options[input1.selectedIndex].value;
   let input2 = document.getElementById("q2");
@@ -33,6 +34,16 @@ form.addEventListener("click", function () {
     outputShow.style.display = getElementById("Swift");
 
   }
+
+
+
+  let outputShow = document.getElementById("output");
+}
+
+window.addEventListener("load", function () {
+  document.getElementById
+
+
 
   // 
 });
