@@ -8,7 +8,7 @@ function formSelect(event) {
 
 
   event.preventDefault();
-  let pick = document.getElementById("ask").value;
+
   let input1 = document.getElementById("q1");
   let pick1 = input1.options[input1.selectedIndex].value;
   let input2 = document.getElementById("q2");
@@ -20,28 +20,29 @@ function formSelect(event) {
   let input5 = document.getElementById("q5");
   let pick5 = input5.options[input5.selectedIndex].value;
 
+  let outputShow = document.getElementById("output");
 
   if (pick1 == "answer1" && (pick2 === "answer1" || pick2 === "answer2" || pick2 === "answer3") && (pick3 === "answer1" || pick3 === "answer2" || pick3 === "answer3") && (pick4 === "answer1" || pick4 === "answer2" || pick4 === "answer3") && (pick5 === "answer1" || pick5 === "answer2")) {
 
-    outputShow.style.display = getElementById("Ruby");
+    outputShow.style.display = document.getElementById("Ruby");
 
   } else if (pick1 == "answer2" && (pick2 === "answer1" || pick2 === "answer2" || pick2 === "answer3") && (pick3 === "answer1" || pick3 === "answer2" || pick3 === "answer3") && (pick4 === "answer1" || pick4 === "answer2" || pick4 === "answer3") && (pick5 === "answer1" || pick5 === "answer2")) {
 
-    outputShow.style.display = getElementById("Python");
+    outputShow.style.display = document.getElementById("Python");
 
   } else if (pick1 == "answer3" && (pick2 === "answer1" || pick2 === "answer2" || pick2 === "answer3") && (pick3 === "answer1" || pick3 === "answer2" || pick3 === "answer3") && (pick4 === "answer1" || pick4 === "answer2" || pick4 === "answer3") && (pick5 === "answer1" || pick5 === "answer2")) {
 
-    outputShow.style.display = getElementById("Swift");
+    outputShow.style.display = document.getElementById("Swift");
 
   }
 
 
 
-  let outputShow = document.getElementById("output");
+
 }
 
 window.addEventListener("load", function () {
-  document.getElementById
+  document.getElementById("ask").addEventListener("submit", formSelect)
 
 
 
