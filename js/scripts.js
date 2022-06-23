@@ -22,15 +22,17 @@ function formSelect(event) {
 
   let outputShow = document.getElementById("output");
 
-  if (pick1 == "answer1" && (pick2 === "answer1" || pick2 === "answer2" || pick2 === "answer3") && (pick3 === "answer1" || pick3 === "answer2" || pick3 === "answer3") && (pick4 === "answer1" || pick4 === "answer2" || pick4 === "answer3") && (pick5 === "answer1" || pick5 === "answer2")) {
+  if (pick1 == "answer1"
+    //&& (pick2 === "answer1" || pick2 === "answer2" || pick2 === "answer3") && (pick3 === "answer1" || pick3 === "answer2" || pick3 === "answer3") && (pick4 === "answer1" || pick4 === "answer2" || pick4 === "answer3") && (pick5 === "answer1" || pick5 === "answer2")
+  ) {
 
-    outputShow.style.display = document.getElementById("Ruby");
+    document.getElementById("Ruby").style.display = "block";
 
   } else if (pick1 == "answer2" && (pick2 === "answer1" || pick2 === "answer2" || pick2 === "answer3") && (pick3 === "answer1" || pick3 === "answer2" || pick3 === "answer3") && (pick4 === "answer1" || pick4 === "answer2" || pick4 === "answer3") && (pick5 === "answer1" || pick5 === "answer2")) {
 
     outputShow.style.display = document.getElementById("Python");
 
-  } else if (pick1 == "answer3" && (pick2 === "answer1" || pick2 === "answer2" || pick2 === "answer3") && (pick3 === "answer1" || pick3 === "answer2" || pick3 === "answer3") && (pick4 === "answer1" || pick4 === "answer2" || pick4 === "answer3") && (pick5 === "answer1" || pick5 === "answer2")) {
+  } else {
 
     outputShow.style.display = document.getElementById("Swift");
 
@@ -48,3 +50,7 @@ window.addEventListener("load", function () {
 
   // 
 });
+window.addEventListener("load", function () {
+  document.getElementById("reset").addEventListener("click",)
+});
+//all 3 to styles none
