@@ -48,15 +48,22 @@ window.addEventListener("load", function () {
 
 
 
-  // 
+
 });
 
+// let resetBtn = document.getElementById("reset");
+// resetBtn.style.display = "none";
+
+
+window.addEventListener("load", function () {
+  document.getElementById("output").addEventListener("click", resetFr)
+
+});
+
+function resetFr() {
+  document.getElementById("output").style.display = "";
+}
 
 
 
-// window.addEventListener("load", function () {
-//   document.getElementById("reset").addEventListener("click",)
-//   document.getElementById("output").reset();
-
-// });
 //all 3 to styles none
