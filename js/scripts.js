@@ -20,7 +20,7 @@ function formSelect(event) {
   let input5 = document.getElementById("q5");
   let pick5 = input5.options[input5.selectedIndex].value;
 
-  let outputShow = document.getElementById("output");
+  //let outputShow = document.getElementById("output");
 
   if (pick1 == "answer1"
     //&& (pick2 === "answer1" || pick2 === "answer2" || pick2 === "answer3") && (pick3 === "answer1" || pick3 === "answer2" || pick3 === "answer3") && (pick4 === "answer1" || pick4 === "answer2" || pick4 === "answer3") && (pick5 === "answer1" || pick5 === "answer2")
@@ -30,11 +30,11 @@ function formSelect(event) {
 
   } else if (pick1 == "answer2" && (pick2 === "answer1" || pick2 === "answer2" || pick2 === "answer3") && (pick3 === "answer1" || pick3 === "answer2" || pick3 === "answer3") && (pick4 === "answer1" || pick4 === "answer2" || pick4 === "answer3") && (pick5 === "answer1" || pick5 === "answer2")) {
 
-    outputShow.style.display = document.getElementById("Python");
+    document.getElementById("Python").style.display = "block";
 
   } else {
 
-    outputShow.style.display = document.getElementById("Swift");
+    document.getElementById("Swift").style.display = "block";
 
   }
 
@@ -50,7 +50,13 @@ window.addEventListener("load", function () {
 
   // 
 });
-window.addEventListener("load", function () {
-  document.getElementById("reset").addEventListener("click",)
-});
+
+
+
+
+// window.addEventListener("load", function () {
+//   document.getElementById("reset").addEventListener("click",)
+//   document.getElementById("output").reset();
+
+// });
 //all 3 to styles none
