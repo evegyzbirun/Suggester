@@ -7,6 +7,7 @@
 function formSelect(event) {
 
 
+
   event.preventDefault();
 
   let input1 = document.getElementById("q1");
@@ -27,15 +28,21 @@ function formSelect(event) {
   ) {
 
     document.getElementById("Ruby").style.display = "block";
+    document.getElementById("Python").style.display = "none";
+    document.getElementById("Swift").style.display = "none";
+
 
   } else if (pick1 == "answer2" && (pick2 === "answer1" || pick2 === "answer2" || pick2 === "answer3") && (pick3 === "answer1" || pick3 === "answer2" || pick3 === "answer3") && (pick4 === "answer1" || pick4 === "answer2" || pick4 === "answer3") && (pick5 === "answer1" || pick5 === "answer2")) {
 
     document.getElementById("Python").style.display = "block";
+    document.getElementById("Ruby").style.display = "none";
+    document.getElementById("Swift").style.display = "none";
 
   } else {
 
     document.getElementById("Swift").style.display = "block";
-
+    document.getElementById("Ruby").style.display = "none";
+    document.getElementById("Python").style.display = "none";
   }
 
 
@@ -44,25 +51,24 @@ function formSelect(event) {
 }
 
 window.addEventListener("load", function () {
-  document.getElementById("ask").addEventListener("submit", formSelect)
+  document.getElementById("ask").addEventListener("submit", formSelect);
 
 
 
 
-});
-
-// let resetBtn = document.getElementById("reset");
-// resetBtn.style.display = "none";
-
-
-window.addEventListener("load", function () {
-  document.getElementById("output").addEventListener("click", resetFr)
 
 });
 
-function resetFr() {
-  document.getElementById("output").style.display = "";
-}
+
+
+window.addEventListener("resetForm", function () {
+  document.getElementById("ask").addEventListener("click", resetBtn)
+})
+
+
+
+
+
 
 
 
