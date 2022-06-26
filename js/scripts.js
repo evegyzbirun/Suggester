@@ -1,7 +1,7 @@
 // User Interface Logic
 
-//let form = document.getElementById("ask");
-//let submitQs = document.getElementById("btn");
+
+let form = document.getElementById("ask");
 
 
 function formSelect(event) {
@@ -24,7 +24,7 @@ function formSelect(event) {
   //let outputShow = document.getElementById("output");
 
   if (pick1 == "answer1"
-    //&& (pick2 === "answer1" || pick2 === "answer2" || pick2 === "answer3") && (pick3 === "answer1" || pick3 === "answer2" || pick3 === "answer3") && (pick4 === "answer1" || pick4 === "answer2" || pick4 === "answer3") && (pick5 === "answer1" || pick5 === "answer2")
+    && (pick2 === "answer1" || pick2 === "answer2" || pick2 === "answer3") && (pick3 === "answer1" || pick3 === "answer2" || pick3 === "answer3") && (pick4 === "answer1" || pick4 === "answer2" || pick4 === "answer3") && (pick5 === "answer1" || pick5 === "answer2")
   ) {
 
     document.getElementById("Ruby").style.display = "block";
@@ -53,17 +53,21 @@ function formSelect(event) {
 window.addEventListener("load", function () {
   document.getElementById("ask").addEventListener("submit", formSelect);
 
-
-
-
+  let resetBtn = document.getElementById("reset");
+  resetBtn.addEventListener("click", function () {
+    document.getElementById("Ruby").style.display = "none";
+    document.getElementById("Swift").style.display = "none";
+    document.getElementById("Python").style.display = "none";
+  });
 
 });
 
 
 
-window.addEventListener("resetForm", function () {
-  document.getElementById("ask").addEventListener("click", resetBtn)
-})
+
+
+
+
 
 
 
