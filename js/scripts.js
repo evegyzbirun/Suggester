@@ -22,8 +22,7 @@ function formSelect(event) {
   let pick5 = input5.options[input5.selectedIndex].value;
 
 
-  if (pick1 == "answer1"
-    && (pick2 === "answer1" || pick2 === "answer2" || pick2 === "answer3") && (pick3 === "answer1" || pick3 === "answer2" || pick3 === "answer3") && (pick4 === "answer1" || pick4 === "answer2" || pick4 === "answer3") && (pick5 === "answer1" || pick5 === "answer2")
+  if (pick1 == "answer1" && (pick2 === "answer1" || pick2 === "answer2" || pick2 === "answer3") && (pick3 === "answer1" || pick3 === "answer2" || pick3 === "answer3") && (pick4 === "answer1" || pick4 === "answer2" || pick4 === "answer3") && (pick5 === "answer1" || pick5 === "answer2")
   ) {
 
     document.getElementById("Ruby").style.display = "block";
@@ -31,7 +30,9 @@ function formSelect(event) {
     document.getElementById("Swift").style.display = "none";
 
 
-  } else if (pick1 == "answer2" && (pick2 === "answer1" || pick2 === "answer2" || pick2 === "answer3") && (pick3 === "answer1" || pick3 === "answer2" || pick3 === "answer3") && (pick4 === "answer1" || pick4 === "answer2" || pick4 === "answer3") && (pick5 === "answer1" || pick5 === "answer2")) {
+  } else if (pick1 == "answer2"
+    //&& (pick2 === "answer1" || pick2 === "answer2" || pick2 === "answer3") && (pick3 === "answer1" || pick3 === "answer2" || pick3 === "answer3") && (pick4 === "answer1" || pick4 === "answer2" || pick4 === "answer3") && (pick5 === "answer1" || pick5 === "answer2")
+  ) {
 
     document.getElementById("Python").style.display = "block";
     document.getElementById("Ruby").style.display = "none";
